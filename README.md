@@ -39,3 +39,7 @@ git checkout <name>
 ```
 
 develop your works
+
+```console
+git push --set-upstream origin <name>
+```
