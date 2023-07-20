@@ -1,19 +1,41 @@
 # COMP229-FRESH
 
-#Structure
+#App Structure
 
 ```console
 FRESH
 ├── frontend
-│ └── main
-│ └── java (or /python, /javascript, etc.)
+│ └── src
+│      └── app
+│      └── assets
+│          └── img
+│ └── package.json
+│ └── README.md
 │ └── .gitignore
-├── server
-│ └── express-server
-│ └── java (or /python, /javascript, etc.)
+├── backend
+│ └── app
+│      └── config
+│      └── controllers
+│      └── middlewares
+│      └── models
+│      └── routes
+│ └── package.json
+│ └── server.js
+│ └── node_modules
 │ └── .gitignore
-├── Dockerfile
-├── docker-compose.yml
-├── README.md
-└── pom.xml (or package.json, setup.py, etc. depending on your programming language)
+└── README.md
+
 ```
+
+git tutorial
+create a new branch for your work
+
+```console
+git branch <name>
+```
+
+```console
+git checkout <name>
+```
+
+develop your works
