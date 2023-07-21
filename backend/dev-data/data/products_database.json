@@ -1,277 +1,252 @@
 [
-    {
-      "id": 1,
-      "productName": "Salmon Fillet",
-      "price": 12.99,
-      "category": "Meat and Seafood",
-      "weight": 200,
-      "ifDiscount": false,
-      "origin": "Norway",
-      "description": "Fresh and delicious salmon fillet.",
-      "images": "salmon.jpg"
-    },
-    {
-      "id": 2,
-      "productName": "Chicken Breast",
-      "price": 5.49,
-      "category": "Meat and Seafood",
-      "weight": 300,
-      "ifDiscount": true,
-      "origin": "USA",
-      "description": "Boneless and skinless chicken breast.",
-      "images": "chicken.jpg"
-    },
-    {
-      "id": 3,
-      "productName": "Ground Beef",
-      "price": 8.75,
-      "category": "Meat and Seafood",
-      "weight": 400,
-      "ifDiscount": false,
-      "origin": "Australia",
-      "description": "Premium quality ground beef.",
-      "images": "ground-beef.jpg"
-    },
-    {
-      "id": 4,
-      "productName": "Shrimp",
-      "price": 9.99,
-      "category": "Meat and Seafood",
-      "weight": 250,
-      "ifDiscount": true,
-      "origin": "Vietnam",
-      "description": "Tasty and succulent shrimp.",
-      "images": "shrimp.jpg"
-    },
-    {
-      "id": 5,
-      "productName": "Pork Chops",
-      "price": 6.25,
-      "category": "Meat and Seafood",
-      "weight": 350,
-      "ifDiscount": false,
-      "origin": "USA",
-      "description": "Juicy and tender pork chops.",
-      "images": "pork-chops.jpg"
-    },
-    {
-      "id": 6,
-      "productName": "Fresh Milk",
-      "price": 2.49,
-      "category": "Dairy and Eggs",
-      "weight": 1000,
-      "ifDiscount": false,
-      "origin": "Local",
-      "description": "Farm-fresh pasteurized milk.",
-      "images": "milk.jpg"
-    },
-    {
-      "id": 7,
-      "productName": "Eggs (12-pack)",
-      "price": 1.99,
-      "category": "Dairy and Eggs",
-      "weight": 600,
-      "ifDiscount": false,
-      "origin": "Local",
-      "description": "Grade A large eggs.",
-      "images": "eggs.jpg"
-    },
-    {
-      "id": 8,
-      "productName": "Cheddar Cheese",
-      "price": 3.75,
-      "category": "Dairy and Eggs",
-      "weight": 300,
-      "ifDiscount": true,
-      "origin": "USA",
-      "description": "Sharp and creamy cheddar cheese.",
-      "images": "cheddar-cheese.jpg"
-    },
-    {
-      "id": 9,
-      "productName": "Butter",
-      "price": 2.15,
-      "category": "Dairy and Eggs",
-      "weight": 250,
-      "ifDiscount": false,
-      "origin": "Local",
-      "description": "Unsalted and high-quality butter.",
-      "images": "butter.jpg"
-    },
-    {
-      "id": 10,
-      "productName": "Greek Yogurt",
-      "price": 3.99,
-      "category": "Dairy and Eggs",
-      "weight": 500,
-      "ifDiscount": true,
-      "origin": "Greece",
-      "description": "Creamy and rich Greek yogurt.",
-      "images": "greek-yogurt.jpg"
-    },
-    {
-      "id": 11,
-      "productName": "Apples",
-      "price": 0.99,
-      "category": "Fruit and Vegetables",
-      "weight": 500,
-      "ifDiscount": true,
-      "origin": "Local",
-      "description": "Fresh and crispy apples.",
-      "images": "apples.jpg"
-    },
-    {
-      "id": 12,
-      "productName": "Broccoli",
-      "price": 1.49,
-      "category": "Fruit and Vegetables",
-      "weight": 400,
-      "ifDiscount": false,
-      "origin": "Local",
-      "description": "Tender and nutritious broccoli.",
-      "images": "broccoli.jpg"
-    },
-    {
-      "id": 13,
-      "productName": "Strawberries",
-      "price": 2.99,
-      "category": "Fruit and Vegetables",
-      "weight": 250,
-      "ifDiscount": true,
-      "origin": "Spain",
-      "description": "Sweet and juicy strawberries.",
-      "images": "strawberries.jpg"
-    },
-    {
-      "id": 14,
-      "productName": "Carrots",
-      "price": 0.79,
-      "category": "Fruit and Vegetables",
-      "weight": 300,
-      "ifDiscount": false,
-      "origin": "Local",
-      "description": "Fresh and crunchy carrots.",
-      "images": "carrots.jpg"
-    },
-    {
-      "id": 15,
-      "productName": "Avocado",
-      "price": 1.99,
-      "category": "Fruit and Vegetables",
-      "weight": 150,
-      "ifDiscount": false,
-      "origin": "Mexico",
-      "description": "Creamy and nutritious avocado.",
-      "images": "avocado.jpg"
-    },
-    {
-      "id": 16,
-      "productName": "Whole Wheat Bread",
-      "price": 2.29,
-      "category": "Bakery",
-      "weight": 500,
-      "ifDiscount": true,
-      "origin": "Local",
-      "description": "Healthy whole wheat bread.",
-      "images": "bread.jpg"
-    },
-    {
-      "id": 17,
-      "productName": "Chocolate Chip Cookies",
-      "price": 3.99,
-      "category": "Bakery",
-      "weight": 300,
-      "ifDiscount": false,
-      "origin": "Local",
-      "description": "Delicious homemade chocolate chip cookies.",
-      "images": "cookies.jpg"
-    },
-    {
-      "id": 18,
-      "productName": "Croissant",
-      "price": 1.75,
-      "category": "Bakery",
-      "weight": 150,
-      "ifDiscount": true,
-      "origin": "France",
-      "description": "Flaky and buttery croissant.",
-      "images": "croissant.jpg"
-    },
-    {
-      "id": 19,
-      "productName": "Blueberry Muffins",
-      "price": 2.49,
-      "category": "Bakery",
-      "weight": 200,
-      "ifDiscount": false,
-      "origin": "Local",
-      "description": "Freshly baked blueberry muffins.",
-      "images": "blueberry-muffins.jpg"
-    },
-    {
-      "id": 20,
-      "productName": "Baguette",
-      "price": 1.99,
-      "category": "Bakery",
-      "weight": 300,
-      "ifDiscount": true,
-      "origin": "France",
-      "description": "Classic French baguette.",
-      "images": "baguette.jpg"
-    },
-    {
-      "id": 21,
-      "productName": "Orange Juice",
-      "price": 1.99,
-      "category": "Beverage and Alcohol",
-      "weight": 1000,
-      "ifDiscount": true,
-      "origin": "Local",
-      "description": "Freshly squeezed orange juice.",
-      "images": "orange-juice.jpg"
-    },
-    {
-      "id": 22,
-      "productName": "Red Wine",
-      "price": 9.99,
-      "category": "Beverage and Alcohol",
-      "weight": 750,
-      "ifDiscount": false,
-      "origin": "France",
-      "description": "Rich and flavorful red wine.",
-      "images": "red-wine.jpg"
-    },
-    {
-      "id": 23,
-      "productName": "Sparkling Water",
-      "price": 0.75,
-      "category": "Beverage and Alcohol",
-      "weight": 500,
-      "ifDiscount": true,
-      "origin": "Local",
-      "description": "Refreshing sparkling water.",
-      "images": "sparkling-water.jpg"
-    },
-    {
-      "id": 24,
-      "productName": "Iced Tea",
-      "price": 1.49,
-      "category": "Beverage and Alcohol",
-      "weight": 450,
-      "ifDiscount": false,
-      "origin": "Local",
-      "description": "Sweetened and brewed iced tea.",
-      "images": "iced-tea.jpg"
-    },
-    {
-      "id": 25,
-      "productName": "Craft Beer",
-      "price": 3.25,
-      "category": "Beverage and Alcohol",
-      "weight": 500,
-      "ifDiscount": true,
-      "origin": "Local",
-      "description": "Locally brewed craft beer.",
-      "images": "craft-beer.jpg"
-    }
+  {
+    "name": "Salmon Fillet",
+    "price": 12.99,
+    "category": "Meat and Seafood",
+    "weight": 200,
+    "ifDiscount": false,
+    "origin": "Norway",
+    "description": "Fresh and delicious salmon fillet.",
+    "images": "salmon.jpg"
+  },
+  {
+    "name": "Chicken Breast",
+    "price": 5.49,
+    "category": "Meat and Seafood",
+    "weight": 300,
+    "ifDiscount": true,
+    "origin": "USA",
+    "description": "Boneless and skinless chicken breast.",
+    "images": "chicken.jpg"
+  },
+  {
+    "name": "Ground Beef",
+    "price": 8.75,
+    "category": "Meat and Seafood",
+    "weight": 400,
+    "ifDiscount": false,
+    "origin": "Australia",
+    "description": "Premium quality ground beef.",
+    "images": "ground-beef.jpg"
+  },
+  {
+    "name": "Shrimp",
+    "price": 9.99,
+    "category": "Meat and Seafood",
+    "weight": 250,
+    "ifDiscount": true,
+    "origin": "Vietnam",
+    "description": "Tasty and succulent shrimp.",
+    "images": "shrimp.jpg"
+  },
+  {
+    "name": "Pork Chops",
+    "price": 6.25,
+    "category": "Meat and Seafood",
+    "weight": 350,
+    "ifDiscount": false,
+    "origin": "USA",
+    "description": "Juicy and tender pork chops.",
+    "images": "pork-chops.jpg"
+  },
+  {
+    "name": "Fresh Milk",
+    "price": 2.49,
+    "category": "Dairy and Eggs",
+    "weight": 1000,
+    "ifDiscount": false,
+    "origin": "Local",
+    "description": "Farm-fresh pasteurized milk.",
+    "images": "milk.jpg"
+  },
+  {
+    "name": "Eggs (12-pack)",
+    "price": 1.99,
+    "category": "Dairy and Eggs",
+    "weight": 600,
+    "ifDiscount": false,
+    "origin": "Local",
+    "description": "Grade A large eggs.",
+    "images": "eggs.jpg"
+  },
+  {
+    "name": "Cheddar Cheese",
+    "price": 3.75,
+    "category": "Dairy and Eggs",
+    "weight": 300,
+    "ifDiscount": true,
+    "origin": "USA",
+    "description": "Sharp and creamy cheddar cheese.",
+    "images": "cheddar-cheese.jpg"
+  },
+  {
+    "name": "Butter",
+    "price": 2.15,
+    "category": "Dairy and Eggs",
+    "weight": 250,
+    "ifDiscount": false,
+    "origin": "Local",
+    "description": "Unsalted and high-quality butter.",
+    "images": "butter.jpg"
+  },
+  {
+    "name": "Greek Yogurt",
+    "price": 3.99,
+    "category": "Dairy and Eggs",
+    "weight": 500,
+    "ifDiscount": true,
+    "origin": "Greece",
+    "description": "Creamy and rich Greek yogurt.",
+    "images": "greek-yogurt.jpg"
+  },
+  {
+    "name": "Apples",
+    "price": 0.99,
+    "category": "Fruit and Vegetables",
+    "weight": 500,
+    "ifDiscount": true,
+    "origin": "Local",
+    "description": "Fresh and crispy apples.",
+    "images": "apples.jpg"
+  },
+  {
+    "name": "Broccoli",
+    "price": 1.49,
+    "category": "Fruit and Vegetables",
+    "weight": 400,
+    "ifDiscount": false,
+    "origin": "Local",
+    "description": "Tender and nutritious broccoli.",
+    "images": "broccoli.jpg"
+  },
+  {
+    "name": "Strawberries",
+    "price": 2.99,
+    "category": "Fruit and Vegetables",
+    "weight": 250,
+    "ifDiscount": true,
+    "origin": "Spain",
+    "description": "Sweet and juicy strawberries.",
+    "images": "strawberries.jpg"
+  },
+  {
+    "name": "Carrots",
+    "price": 0.79,
+    "category": "Fruit and Vegetables",
+    "weight": 300,
+    "ifDiscount": false,
+    "origin": "Local",
+    "description": "Fresh and crunchy carrots.",
+    "images": "carrots.jpg"
+  },
+  {
+    "name": "Avocado",
+    "price": 1.99,
+    "category": "Fruit and Vegetables",
+    "weight": 150,
+    "ifDiscount": false,
+    "origin": "Mexico",
+    "description": "Creamy and nutritious avocado.",
+    "images": "avocado.jpg"
+  },
+  {
+    "name": "Whole Wheat Bread",
+    "price": 2.29,
+    "category": "Bakery",
+    "weight": 500,
+    "ifDiscount": true,
+    "origin": "Local",
+    "description": "Healthy whole wheat bread.",
+    "images": "bread.jpg"
+  },
+  {
+    "name": "Chocolate Chip Cookies",
+    "price": 3.99,
+    "category": "Bakery",
+    "weight": 300,
+    "ifDiscount": false,
+    "origin": "Local",
+    "description": "Delicious homemade chocolate chip cookies.",
+    "images": "cookies.jpg"
+  },
+  {
+    "name": "Croissant",
+    "price": 1.75,
+    "category": "Bakery",
+    "weight": 150,
+    "ifDiscount": true,
+    "origin": "France",
+    "description": "Flaky and buttery croissant.",
+    "images": "croissant.jpg"
+  },
+  {
+    "name": "Blueberry Muffins",
+    "price": 2.49,
+    "category": "Bakery",
+    "weight": 200,
+    "ifDiscount": false,
+    "origin": "Local",
+    "description": "Freshly baked blueberry muffins.",
+    "images": "blueberry-muffins.jpg"
+  },
+  {
+    "name": "Baguette",
+    "price": 1.99,
+    "category": "Bakery",
+    "weight": 300,
+    "ifDiscount": true,
+    "origin": "France",
+    "description": "Classic French baguette.",
+    "images": "baguette.jpg"
+  },
+  {
+    "name": "Orange Juice",
+    "price": 1.99,
+    "category": "Beverage and Alcohol",
+    "weight": 1000,
+    "ifDiscount": true,
+    "origin": "Local",
+    "description": "Freshly squeezed orange juice.",
+    "images": "orange-juice.jpg"
+  },
+  {
+    "name": "Red Wine",
+    "price": 9.99,
+    "category": "Beverage and Alcohol",
+    "weight": 750,
+    "ifDiscount": false,
+    "origin": "France",
+    "description": "Rich and flavorful red wine.",
+    "images": "red-wine.jpg"
+  },
+  {
+    "name": "Sparkling Water",
+    "price": 0.75,
+    "category": "Beverage and Alcohol",
+    "weight": 500,
+    "ifDiscount": true,
+    "origin": "Local",
+    "description": "Refreshing sparkling water.",
+    "images": "sparkling-water.jpg"
+  },
+  {
+    "name": "Iced Tea",
+    "price": 1.49,
+    "category": "Beverage and Alcohol",
+    "weight": 450,
+    "ifDiscount": false,
+    "origin": "Local",
+    "description": "Sweetened and brewed iced tea.",
+    "images": "iced-tea.jpg"
+  },
+  {
+    "name": "Craft Beer",
+    "price": 3.25,
+    "category": "Beverage and Alcohol",
+    "weight": 500,
+    "ifDiscount": true,
+    "origin": "Local",
+    "description": "Locally brewed craft beer.",
+    "images": "craft-beer.jpg"
+  }
 ]
