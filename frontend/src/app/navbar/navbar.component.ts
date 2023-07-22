@@ -5,7 +5,7 @@ import { AuthService } from '../_services/auth.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
   private roles: string[] = [];
@@ -14,7 +14,10 @@ export class NavbarComponent {
   showModeratorBoard = false;
   username?: string;
 
-  constructor(private storageService: StorageService, private authService: AuthService) { }
+  constructor(
+    private storageService: StorageService,
+    private authService: AuthService
+  ) {}
 
   ngOnInit(): void {
     this.isLoggedIn = this.storageService.isLoggedIn();
@@ -32,15 +35,15 @@ export class NavbarComponent {
 
   logout(): void {
     this.authService.logout().subscribe({
-      next: res => {
+      next: (res) => {
         console.log(res);
         this.storageService.clean();
 
         window.location.reload();
       },
-      error: err => {
+      error: (err) => {
         console.log(err);
-      }
+      },
     });
   }
 }
