@@ -36,6 +36,7 @@ import { BoardUserComponent } from './board-user/board-user.component';
 
 import { httpInterceptorProviders } from './_helpers/http.interceptor';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SearchToolComponent } from './components/search-tool/search-tool.component';
 
 
 
@@ -68,7 +69,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     BoardModeratorComponent,
 
     BoardUserComponent,
-     NavbarComponent
+     NavbarComponent,
+     SearchToolComponent
 
   ],
 

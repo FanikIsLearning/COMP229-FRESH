@@ -1,0 +1,47 @@
+.navbar {
+    background-color: #ffffff;
+    border: #242424 solid;
+    /* Add padding to create space around the navbar */
+    padding: 10px;
+  }
+
+  .navbar .navbar-brand img {
+    height: 80px;
+    width: auto;
+  }
+
+  .navbar .nav-item {
+    /* Adjust margin and padding to create space between items */
+    margin-right: 20px;
+    padding: 10px 15px;
+  }
+
+  /* Remove right margin from the last nav-item */
+  .navbar .nav-item:last-child {
+    margin-right: 0;
+  }
+
+  .navbar .nav-link {
+    color: #242424;
+    font-size: 1.2em;
+  }
+
+  .navbar .nav-link:hover {
+    background-color: #cccbcb;
+  }
+
+  /* Adjust the navbar-nav styles to align with the navbar */
+  .navbar .navbar-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Add negative margin to the first and last nav-item to align with the edges of the navbar */
+  .navbar .navbar-nav .nav-item:first-child {
+    margin-left: -10px;
+  }
+
+  .navbar .navbar-nav .nav-item:last-child {
+    margin-right: -10px;
+  }

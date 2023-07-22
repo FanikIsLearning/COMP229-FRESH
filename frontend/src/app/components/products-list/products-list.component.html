@@ -2,39 +2,7 @@
 
   <div class="col-md-8">
 
-    <div class="input-group mb-3">
-
-      <input
-
-        type="text"
-
-        class="form-control"
-
-        placeholder="Search by name"
-
-        [(ngModel)]="name"
-
-      />
-
-      <div class="input-group-append">
-
-        <button
-
-          class="btn btn-outline-secondary"
-
-          type="button"
-
-          (click)="searchName()"
-
-        >
-
-          Search
-
-        </button>
-
-      </div>
-
-    </div>
+    <app-search-tool></app-search-tool>
 
   </div>
 
@@ -44,17 +12,8 @@
 
     <ul class="list-group">
 
-      <li
-
-        class="list-group-item"
-
-        *ngFor="let product of products; let i = index"
-
-        [class.active]="i == currentIndex"
-
-        (click)="setActiveProduct(product, i)"
-
-      >
+      <li class="list-group-item" *ngFor="let product of products; let i = index" [class.active]="i == currentIndex"
+        (click)="setActiveProduct(product, i)">
 
         {{ product.name }}
 
@@ -64,7 +23,8 @@
 
 
 
-    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllProducts()" *ngIf="showModeratorBoard || showAdminBoard">
+    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllProducts()"
+      *ngIf="showModeratorBoard || showAdminBoard">
 
 
 
@@ -76,16 +36,8 @@
 
   <div class="col-md-6">
 
-    <app-product-details
-
-      [viewMode]="true"
-
-      [currentProduct]="currentProduct"
-
-    ></app-product-details>
+    <app-product-details [viewMode]="true" [currentProduct]="currentProduct"></app-product-details>
 
   </div>
 
 </div>
-
- 

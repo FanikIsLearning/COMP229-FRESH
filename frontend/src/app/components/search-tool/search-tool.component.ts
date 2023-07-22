@@ -8,19 +8,12 @@ import { ProductService } from 'src/app/services/product.service';
 
 
 @Component({
-
-  selector: 'app-products-list',
-
-  templateUrl: './products-list.component.html',
-
-  styleUrls: ['./products-list.component.css']
-
+  selector: 'app-search-tool',
+  templateUrl: './search-tool.component.html',
+  styleUrls: ['./search-tool.component.css']
 })
 
-export class ProductsListComponent implements OnInit {
-
-
-
+export class SearchToolComponent implements OnInit {
   products?: Product[];
 
   currentProduct: Product = {};
@@ -28,8 +21,6 @@ export class ProductsListComponent implements OnInit {
   currentIndex = -1;
 
   name = '';
-
-
 
   private roles: string[] = [];
 
@@ -41,11 +32,7 @@ export class ProductsListComponent implements OnInit {
 
   username?: string;
 
-
-
   constructor(private productService: ProductService, private storageService: StorageService,) { }
-
-
 
   ngOnInit(): void {
 
@@ -75,12 +62,6 @@ export class ProductsListComponent implements OnInit {
 
   }
 
-
-
-
-
-
-
   retrieveProducts(): void {
 
     this.productService.getAll()
@@ -100,52 +81,6 @@ export class ProductsListComponent implements OnInit {
       });
 
   }
-
-
-
-  refreshList(): void {
-
-    this.retrieveProducts();
-
-    this.currentProduct = {};
-
-    this.currentIndex = -1;
-
-  }
-
-
-
-  setActiveProduct(product: Product, index: number): void {
-
-    this.currentProduct = product;
-
-    this.currentIndex = index;
-
-  }
-
-
-
-  removeAllProducts(): void {
-
-    this.productService.deleteAll()
-
-      .subscribe({
-
-        next: (res) => {
-
-          console.log(res);
-
-          this.refreshList();
-
-        },
-
-        error: (e) => console.error(e)
-
-      });
-
-  }
-
-
 
   searchName(): void {
 
