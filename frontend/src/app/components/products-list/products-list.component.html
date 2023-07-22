@@ -1,43 +1,20 @@
 <div class="list row">
-
-  <div class="col-md-8">
-
-    <app-search-tool></app-search-tool>
-
+  <div class="col-md-8"></div>
+  <div class="col-md-6">
+    <app-list-tool
+      [products]="products"
+      [currentIndex]="currentIndex"
+      [showModeratorBoard]="showModeratorBoard"
+      [showAdminBoard]="showAdminBoard"
+      (setActive)="setActiveProduct($event.product, $event.index)"
+      (removeAll)="removeAllProducts()"
+    ></app-list-tool>
   </div>
 
   <div class="col-md-6">
-
-    <h4>Products List</h4>
-
-    <ul class="list-group">
-
-      <li class="list-group-item" *ngFor="let product of products; let i = index" [class.active]="i == currentIndex"
-        (click)="setActiveProduct(product, i)">
-
-        {{ product.name }}
-
-      </li>
-
-    </ul>
-
-
-
-    <button class="m-3 btn btn-sm btn-danger" (click)="removeAllProducts()"
-      *ngIf="showModeratorBoard || showAdminBoard">
-
-
-
-      Remove All
-
-    </button>
-
+    <app-product-details
+      [viewMode]="true"
+      [currentProduct]="currentProduct"
+    ></app-product-details>
   </div>
-
-  <div class="col-md-6">
-
-    <app-product-details [viewMode]="true" [currentProduct]="currentProduct"></app-product-details>
-
-  </div>
-
 </div>

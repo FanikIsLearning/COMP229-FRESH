@@ -37,6 +37,7 @@ import { BoardUserComponent } from './board-user/board-user.component';
 import { httpInterceptorProviders } from './_helpers/http.interceptor';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchToolComponent } from './components/search-tool/search-tool.component';
+import { ListToolComponent } from './components/list-tool/list-tool.component';
 
 
 
@@ -70,7 +71,8 @@ import { SearchToolComponent } from './components/search-tool/search-tool.compon
 
     BoardUserComponent,
      NavbarComponent,
-     SearchToolComponent
+     SearchToolComponent,
+     ListToolComponent
 
   ],
 
