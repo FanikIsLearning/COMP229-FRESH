@@ -13,6 +13,7 @@ export class ProfileComponent implements OnInit {
   showAdminBoard = false;
   showModeratorBoard = false;
   roles: string[] = [];
+  displayRoles: string[] = [];
 
   constructor(
     private authService: AuthService,
@@ -26,6 +27,9 @@ export class ProfileComponent implements OnInit {
       const user = this.storageService.getUser();
       this.roles = user.roles;
 
+      this.displayRoles = this.roles.map((role: string) =>
+        role.replace('ROLE_', '')
+      );
       this.showAdminBoard = this.roles.includes('ROLE_ADMIN');
       this.showModeratorBoard = this.roles.includes('ROLE_MODERATOR');
 

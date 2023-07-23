@@ -1,15 +1,25 @@
 <h4>Products List</h4>
 
-<ul class="list-group">
-  <li
-    class="list-group-item"
-    *ngFor="let product of products; let i = index"
-    [class.active]="i == currentIndex"
-    (click)="setActiveProduct(product, i)"
-  >
-    {{ product.name }}
-  </li>
-</ul>
+<div class="row">
+  <div class="col-md-4" *ngFor="let product of products; let i = index">
+    <div
+      class="card"
+      [class.active]="i == currentIndex"
+      (click)="setActiveProduct(product, i)"
+    >
+      <img
+        src="../../assets/fresh.png"
+        class="card-img-top"
+        alt="product image"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+        <!--a href="#" class="btn btn-primary">View details</a-->
+      </div>
+    </div>
+  </div>
+</div>
 
 <button
   class="m-3 btn btn-sm btn-danger"
