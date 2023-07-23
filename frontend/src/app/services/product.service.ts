@@ -6,13 +6,17 @@ import { Product } from '../models/product.model';
 const baseUrl = 'http://localhost:8080/api/products';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductService {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getAll(): Observable<Product[]> {
     return this.http.get<Product[]>(baseUrl);
+  }
+
+  getByCategory(category: string): Observable<Product[]> {
+    return this.http.get<Product[]>(`${baseUrl}?category=${category}`);
   }
 
   get(id: any): Observable<Product> {
@@ -37,5 +41,9 @@ export class ProductService {
 
   findByName(name: any): Observable<Product[]> {
     return this.http.get<Product[]>(`${baseUrl}?name=${name}`);
+  }
+
+  findByCategory(category: any): Observable<Product[]> {
+    return this.http.get<Product[]>(`${baseUrl}?category=${category}`);
   }
 }

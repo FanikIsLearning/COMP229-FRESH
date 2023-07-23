@@ -1,10 +1,50 @@
+```console
+frontend
+├── src
+│ └── app
+│     └── _helpers
+│     └── _services
+│     └── board-admin
+│     └── board-moderator
+│     └── board-user
+│     └── components
+│     └── home
+│     └── login
+│     └── models
+│     └── navbar
+│     └── profile
+│     └── register
+│     └── services
+│ └── assets
+│     └── fresh.png
+│ └── app-routing.module.ts
+│ └── app.component.css
+│ └── app.component.html
+│ └── app.component.spec.ts
+│ └── app.component.ts
+│ └── app.module.ts
+├── assets
+└── favicon.ico
+└── index.html
+└── main.ts
+└── style.css
+└── editorconfig
+└── .gitignore
+└── angular.json
+└── package.json
+└── README.md
+└── tsconfig.json
+
+
+```
+
 # Client
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
