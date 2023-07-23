@@ -10,3 +10,8 @@ button {
   width: 50%;
   margin: auto;
 }
+
+#register {
+  text-align: center;
+  font-weight: 600;
+}
