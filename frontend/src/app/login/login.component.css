@@ -2,10 +2,11 @@
   width: 50%;
   height: 50%;
   margin: auto;
+  padding: 3%;
 }
 
 input,
 button {
-  width: 60%;
+  width: 50%;
   margin: auto;
 }

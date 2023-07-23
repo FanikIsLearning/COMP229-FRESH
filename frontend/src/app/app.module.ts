@@ -5,8 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
-
-
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -32,23 +31,13 @@ import { BoardModeratorComponent } from './board-moderator/board-moderator.compo
 
 import { BoardUserComponent } from './board-user/board-user.component';
 
-
-
 import { httpInterceptorProviders } from './_helpers/http.interceptor';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchToolComponent } from './components/search-tool/search-tool.component';
 import { ListToolComponent } from './components/list-tool/list-tool.component';
 
-
-
-
-
-
-
 @NgModule({
-
   declarations: [
-
     AppComponent,
 
     AddProductComponent,
@@ -70,28 +59,21 @@ import { ListToolComponent } from './components/list-tool/list-tool.component';
     BoardModeratorComponent,
 
     BoardUserComponent,
-     NavbarComponent,
-     SearchToolComponent,
-     ListToolComponent
-
+    NavbarComponent,
+    SearchToolComponent,
+    ListToolComponent,
   ],
 
   imports: [
-
     BrowserModule,
-
     AppRoutingModule,
-
     FormsModule,
-
-    HttpClientModule
-
+    HttpClientModule,
+    MatFormFieldModule,
   ],
 
   providers: [httpInterceptorProviders],
 
-  bootstrap: [AppComponent]
-
+  bootstrap: [AppComponent],
 })
-
-export class AppModule { }
+export class AppModule {}
