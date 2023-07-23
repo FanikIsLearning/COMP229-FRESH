@@ -1,0 +1,10 @@
+.category-link {
+  border: 1px solid black;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category-link:hover {
+  background-color: grey;
+  color: white;
+}
