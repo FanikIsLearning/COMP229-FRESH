@@ -10,6 +10,8 @@ import { Subscription } from 'rxjs';
 
 import { SearchService } from 'src/app/services/search.service';
 
+import { FilterService } from 'src/app/services/filter.service';
+
 @Component({
   selector: 'app-products-list',
 
@@ -18,6 +20,7 @@ import { SearchService } from 'src/app/services/search.service';
   styleUrls: ['./products-list.component.css'],
 })
 export class ProductsListComponent implements OnInit {
+  productList?: Product[];
   products?: Product[];
 
   currentProduct: Product = {};
@@ -37,15 +40,22 @@ export class ProductsListComponent implements OnInit {
   username?: string;
 
   searchSubscription?: Subscription;
-
+  filterSubscription?: Subscription;
   constructor(
     private productService: ProductService,
     private storageService: StorageService,
-    private searchService: SearchService
+    private searchService: SearchService,
+    private filterService: FilterService
   ) {}
 
   ngOnInit(): void {
     this.retrieveProducts();
+
+    this.filterSubscription = this.filterService.filterChange.subscribe(
+      (category) => {
+        this.filterCategory(category);
+      }
+    );
 
     this.isLoggedIn = this.storageService.isLoggedIn();
 
@@ -72,21 +82,31 @@ export class ProductsListComponent implements OnInit {
     if (this.searchSubscription) {
       this.searchSubscription.unsubscribe();
     }
+
+    if (this.filterSubscription) {
+      this.filterSubscription.unsubscribe();
+    }
   }
 
   retrieveProducts(): void {
-    this.productService
-      .getAll()
+    this.productService.getAll().subscribe({
+      next: (data) => {
+        this.products = data;
+        this.productList = data; // store all products
+        console.log(data);
+      },
+      error: (e) => console.error(e),
+    });
+  }
 
-      .subscribe({
-        next: (data) => {
-          this.products = data;
-
-          console.log(data);
-        },
-
-        error: (e) => console.error(e),
-      });
+  filterCategory(category: string | null): void {
+    if (category && category.trim() !== '' && this.productList) {
+      this.products = this.productList.filter(
+        (product) => product.category === category
+      );
+    } else {
+      this.products = this.productList;
+    }
   }
 
   refreshList(): void {

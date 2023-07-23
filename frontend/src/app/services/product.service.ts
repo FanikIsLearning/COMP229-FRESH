@@ -15,12 +15,12 @@ export class ProductService {
     return this.http.get<Product[]>(baseUrl);
   }
 
-  get(id: any): Observable<Product> {
-    return this.http.get(`${baseUrl}/${id}`);
-  }
-
   getByCategory(category: string): Observable<Product[]> {
     return this.http.get<Product[]>(`${baseUrl}?category=${category}`);
+  }
+
+  get(id: any): Observable<Product> {
+    return this.http.get(`${baseUrl}/${id}`);
   }
 
   create(data: any): Observable<any> {

@@ -15,39 +15,46 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a href="/product" class="nav-link" routerLink="products"
-              >Grocery
-            </a>
+            <a href="/home" class="navbar-brand">Home</a>
           </li>
           <li class="nav-item">
             <a
-              href="/products/Meat%20and%20Seafood"
               class="nav-link"
-              routerLink="/products/Meat and Seafood"
-              >Meat & Seafood</a
-            >
+              routerLink="products"
+              (click)="filterProductByCategory('')"
+              >All
+            </a>
+          </li>
+          <!--li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="products"
+              (click)="filterProductByCategory('')"
+              >All
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/products/Dairy and Eggs"
-              >Dairy & Eggs</a
-            >
+            <a (click)="filterProductByCategory('Meat and Seafood')">
+              Meat & Seafood
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a (click)="filterProductByCategory('Beverage and Alochol')">
+              Beverage & Alochol
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/products/Fruits and Vegetables"
-              >Fruits & Vegetables</a
-            >
+            <a (click)="filterProductByCategory('Dairy and Eggs')">
+              Dairy & Eggs
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/products/Beverage and Alcohol"
-              >Beverage & Alcohol</a
-            >
+            <a (click)="filterProductByCategory('Bakery')"> Bakery </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/products/Bakery">Bakery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/products/Grains">Grains</a>
-          </li>
+          <li-- class="nav-item">
+            <a (click)="filterProductByCategory('Grains')"> Grains </a>
+          </li-->
         </ul>
         <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
           <li class="nav-item">

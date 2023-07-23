@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { StorageService } from '../_services/storage.service';
 import { AuthService } from '../_services/auth.service';
+import { FilterService } from '../services/filter.service';
 
 @Component({
   selector: 'app-navbar',
@@ -16,7 +17,8 @@ export class NavbarComponent {
 
   constructor(
     private storageService: StorageService,
-    private authService: AuthService
+    private authService: AuthService,
+    private filterService: FilterService
   ) {}
 
   ngOnInit(): void {
@@ -31,6 +33,10 @@ export class NavbarComponent {
 
       this.username = user.username;
     }
+  }
+
+  filterProductByCategory(category: string): void {
+    this.filterService.filterProductByCategory(category);
   }
 
   logout(): void {
