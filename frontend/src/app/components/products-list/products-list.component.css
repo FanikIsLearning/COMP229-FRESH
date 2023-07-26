@@ -1,10 +1,15 @@
-.category-link {
-  border: 1px solid black;
-  padding: 5px;
-  transition: background-color 0.3s ease;
+
+div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.category-link:hover {
-  background-color: grey;
-  color: white;
+div a{
+  background-color: #e6efe8;
+  padding: 0.3rem 1rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 5rem;
+  font-weight: 600;
+  color: rgb(24, 84, 29);
 }
