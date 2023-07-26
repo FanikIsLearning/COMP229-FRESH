@@ -1,22 +1,41 @@
 <div *ngIf="viewMode; else editable">
   <div *ngIf="currentProduct.id">
-    <h4>Product</h4>
 
-    <div>
-      <label><strong>name:</strong></label> {{ currentProduct.name }}
+    <div class="product-details">
+      <div class="product-title">
+        {{ currentProduct.name }}
+      </div>
+
+      <img class="product-image" [src]="'assets/' + currentProduct.images" [alt]="currentProduct.name" />
+
+      <div class="product-description">
+        <label><strong>Description: </strong></label>
+        <span>{{ currentProduct.description }}</span>
+      </div>
+
+      <div class="product-price">
+        <label><strong>Price: </strong></label>
+        <span>{{ currentProduct.price | currency }}</span>
+      </div>
+
+      <div class="product-weight">
+        <label><strong>Weight: </strong></label>
+        <span>{{ currentProduct.weight }}g</span>
+      </div>
+
+      <div class="product-origin">
+        <label><strong>Origin: </strong></label>
+        <span>{{ currentProduct.origin }}</span>
+      </div>
+
+      <div class="quantity">
+        <button (click) = "onAddQuantity()">+</button>
+        <p>Quantity: {{productQuantity}}</p>
+        <button (click) = "onRemoveQuantity()">-</button>
+      </div>
+
     </div>
 
-    <div>
-      <label><strong>Description:</strong></label>
-
-      {{ currentProduct.description }}
-    </div>
-
-    <div>
-      <label><strong>Status:</strong></label>
-
-      {{ currentProduct.published ? "Published" : "Pending" }}
-    </div>
 
     <a
       class="badge badge-warning"

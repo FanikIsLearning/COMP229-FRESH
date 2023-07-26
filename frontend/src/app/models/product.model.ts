@@ -3,8 +3,12 @@ export class Product {
   id?: any;
   name?: string;
   description?: string;
-  price?: Number;
+  price?: number|string;
   published?: boolean;
-  category?: string
+  category?: string;
+  weight?: number;
+  origin?: string;
+  images?: string;
+  ifDiscount?: boolean;
 
 }

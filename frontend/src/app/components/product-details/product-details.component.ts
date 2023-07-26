@@ -25,25 +25,33 @@ export class ProductDetailsComponent implements OnInit {
   @Input() viewMode = false;
 
 
-
   @Input() currentProduct: Product = {
 
     name: '',
-
     description: '',
-
     price: 0,
-
-    published: false,
-
-    category: ''
+    weight: 0,
+    category: '',
+    images:'',
+    ifDiscount: false,
+    origin: ''
 
   };
 
+  productQuantity = 0;
+
+  onAddQuantity(){
+    this.productQuantity +=1;
+  }
+
+  onRemoveQuantity() {
+    if (this.productQuantity > 0) {
+      this.productQuantity -= 1;
+    }
+  }
 
 
   message = '';
-
 
 
   private roles: string[] = [];
