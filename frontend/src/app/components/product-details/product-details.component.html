@@ -1,7 +1,13 @@
 <div *ngIf="viewMode; else editable">
   <div *ngIf="currentProduct.id">
-    <h4>Product</h4>
-
+    <h4>Product details</h4>
+    <div>
+      <img
+        [src]="currentProduct.images"
+        [alt]="currentProduct.name"
+        style="width: 300px; height: 300px"
+      />
+    </div>
     <div>
       <label><strong>name:</strong></label> {{ currentProduct.name }}
     </div>
@@ -11,13 +17,21 @@
 
       {{ currentProduct.description }}
     </div>
-
     <div>
-      <label><strong>Status:</strong></label>
+      <label><strong>Price: </strong>CAD </label>
 
-      {{ currentProduct.published ? "Published" : "Pending" }}
+      {{ currentProduct.price }}
     </div>
+    <div>
+      <label><strong>Weight: </strong></label>
 
+      {{ currentProduct.weight }} grams
+    </div>
+    <div>
+      <label><strong>Origin: </strong></label>
+
+      {{ currentProduct.origin }}
+    </div>
     <a
       class="badge badge-warning"
       routerLink="/products/{{ currentProduct.id }}"
