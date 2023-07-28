@@ -35,6 +35,7 @@ import { httpInterceptorProviders } from './_helpers/http.interceptor';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SearchToolComponent } from './components/search-tool/search-tool.component';
 import { ListToolComponent } from './components/list-tool/list-tool.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { ListToolComponent } from './components/list-tool/list-tool.component';
     NavbarComponent,
     SearchToolComponent,
     ListToolComponent,
+    CarouselComponent,
   ],
 
   imports: [
