@@ -1,31 +1,4 @@
 <div class="list row">
-  <div class="container">
-    <a class="btn btn-outline-secondary" (click)="filterCategory('')">All </a>
-    <a
-      class="btn btn-outline-secondary"
-      (click)="filterCategory('Meat and Seafood')"
-    >
-      Meat & Seafood
-    </a>
-    <a
-      class="btn btn-outline-secondary"
-      (click)="filterCategory('Beverage and Alochol')"
-    >
-      Beverage & Alochol
-    </a>
-    <a
-      class="btn btn-outline-secondary"
-      (click)="filterCategory('Dairy and Eggs')"
-    >
-      Dairy & Eggs
-    </a>
-    <a class="btn btn-outline-secondary" (click)="filterCategory('Bakery')">
-      Bakery
-    </a>
-    <a class="btn btn-outline-secondary" (click)="filterCategory('Grains')">
-      Grains
-    </a>
-  </div>
   <div class="col-md-6">
     <app-list-tool
       [products]="products"
