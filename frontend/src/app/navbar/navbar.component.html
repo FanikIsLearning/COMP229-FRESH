@@ -22,39 +22,55 @@
               class="nav-link"
               routerLink="products"
               (click)="filterProductByCategory('')"
-              >All
-            </a>
-          </li>
-          <!--li class="nav-item">
-            <a
-              class="nav-link"
-              routerLink="products"
-              (click)="filterProductByCategory('')"
-              >All
+              >Products
             </a>
           </li>
           <li class="nav-item">
-            <a (click)="filterProductByCategory('Meat and Seafood')">
+            <a
+              class="nav-link"
+              routerLink="products"
+              (click)="filterProductByCategory('Meat and Seafood')"
+            >
               Meat & Seafood
             </a>
           </li>
 
           <li class="nav-item">
-            <a (click)="filterProductByCategory('Beverage and Alochol')">
+            <a
+              class="nav-link"
+              routerLink="products"
+              (click)="filterProductByCategory('Beverage and Alochol')"
+            >
               Beverage & Alochol
             </a>
           </li>
           <li class="nav-item">
-            <a (click)="filterProductByCategory('Dairy and Eggs')">
+            <a
+              class="nav-link"
+              routerLink="products"
+              (click)="filterProductByCategory('Dairy and Eggs')"
+            >
               Dairy & Eggs
             </a>
           </li>
           <li class="nav-item">
-            <a (click)="filterProductByCategory('Bakery')"> Bakery </a>
+            <a
+              class="nav-link"
+              routerLink="products"
+              (click)="filterProductByCategory('Bakery')"
+            >
+              Bakery
+            </a>
           </li>
-          <li-- class="nav-item">
-            <a (click)="filterProductByCategory('Grains')"> Grains </a>
-          </li-->
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="products"
+              (click)="filterProductByCategory('Grains')"
+            >
+              Grains
+            </a>
+          </li>
         </ul>
         <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">
           <li class="nav-item">
