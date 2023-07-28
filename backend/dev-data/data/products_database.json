@@ -7,7 +7,7 @@
     "ifDiscount": false,
     "origin": "Norway",
     "description": "Fresh and delicious salmon fillet.",
-    "images": "salmon.jpg"
+    "images": "https://images.ctfassets.net/odk340ad2lwh/5kqN3IVjjinkXtovB5764s/28d1d720d335af2c0852f7e7d248954f/WFC_5012_Seafood_AtlanticSalmon_Fillets_Skinless_Organic_Raw.jpg?fm=webp&w=1920&h=1080"
   },
   {
     "name": "Chicken Breast",
@@ -17,7 +17,7 @@
     "ifDiscount": true,
     "origin": "USA",
     "description": "Boneless and skinless chicken breast.",
-    "images": "chicken.jpg"
+    "images": "https://www.momswhothink.com/wp-content/uploads/2023/05/shutterstock-1915431781-huge-licensed-scaled.jpg"
   },
   {
     "name": "Ground Beef",
@@ -27,7 +27,7 @@
     "ifDiscount": false,
     "origin": "Australia",
     "description": "Premium quality ground beef.",
-    "images": "ground-beef.jpg"
+    "images": "https://images.ctfassets.net/odk340ad2lwh/1LkPAWOOzKDPq5lsSSFvhV/35f3f184ff63c837d30a6739070d3345/WFC_9022_Grinds_GroundBeef_LeanGF_Raw.jpg?fm=webp&w=1920&h=1080"
   },
   {
     "name": "Shrimp",
@@ -37,7 +37,7 @@
     "ifDiscount": true,
     "origin": "Vietnam",
     "description": "Tasty and succulent shrimp.",
-    "images": "shrimp.jpg"
+    "images": "https://images.ctfassets.net/odk340ad2lwh/2cLppIUVqHDEjS6vuGAU5s/b9ce38796be65436f26bde577020ce67/WFC_5119_Seafood_Shrimp_WhiteLarge31-40_Raw.jpeg?fm=webp&w=1920&h=1080"
   },
   {
     "name": "Pork Chops",
@@ -47,7 +47,7 @@
     "ifDiscount": false,
     "origin": "USA",
     "description": "Juicy and tender pork chops.",
-    "images": "pork-chops.jpg"
+    "images": "https://images.ctfassets.net/odk340ad2lwh/5LZjJzwTzuheLKIxbH2bTd/250bb67a2fdedde680321eaf8a458173/WFC_6918_Pork_Chop_BICentreCutLoin_Raw.jpg?fm=webp&w=1920&h=1080"
   },
   {
     "name": "Fresh Milk",
@@ -57,7 +57,7 @@
     "ifDiscount": false,
     "origin": "Local",
     "description": "Farm-fresh pasteurized milk.",
-    "images": "milk.jpg"
+    "images": "https://www.cdc.gov/foodsafety/images/rawmilk/raw-milk-fb-tw_1.jpg?_=98116"
   },
   {
     "name": "Eggs (12-pack)",
@@ -67,7 +67,7 @@
     "ifDiscount": false,
     "origin": "Local",
     "description": "Grade A large eggs.",
-    "images": "eggs.jpg"
+    "images": "https://i.etsystatic.com/19351937/r/il/9fa86c/2462072454/il_570xN.2462072454_kecn.jpg"
   },
   {
     "name": "Cheddar Cheese",
@@ -77,7 +77,7 @@
     "ifDiscount": true,
     "origin": "USA",
     "description": "Sharp and creamy cheddar cheese.",
-    "images": "cheddar-cheese.jpg"
+    "images": "https://media.istockphoto.com/id/470427615/photo/organic-shredded-sharp-cheddar-cheese.jpg?s=612x612&w=0&k=20&c=oZ8R4WrLpg7qM_DCed3SLoNZ0ow77_2X9iOds-0NGtA="
   },
   {
     "name": "Butter",
@@ -87,7 +87,7 @@
     "ifDiscount": false,
     "origin": "Local",
     "description": "Unsalted and high-quality butter.",
-    "images": "butter.jpg"
+    "images": "https://static.vecteezy.com/system/resources/previews/007/975/540/non_2x/detail-shot-of-fresh-butter-in-a-container-photo.jpg"
   },
   {
     "name": "Greek Yogurt",
@@ -97,7 +97,7 @@
     "ifDiscount": true,
     "origin": "Greece",
     "description": "Creamy and rich Greek yogurt.",
-    "images": "greek-yogurt.jpg"
+    "images": "https://mariaspeck.com/wp-content/uploads/IMG_1230-1024x904.jpg"
   },
   {
     "name": "Apples",
@@ -107,7 +107,7 @@
     "ifDiscount": true,
     "origin": "Local",
     "description": "Fresh and crispy apples.",
-    "images": "apples.jpg"
+    "images": "https://post.healthline.com/wp-content/uploads/2020/09/health-benefits-of-apples-732x549-thumbnail-732x549.jpg"
   },
   {
     "name": "Broccoli",
@@ -117,7 +117,7 @@
     "ifDiscount": false,
     "origin": "Local",
     "description": "Tender and nutritious broccoli.",
-    "images": "broccoli.jpg"
+    "images": "https://media.istockphoto.com/id/802266868/photo/cooked-green-broccoli-with-sea-salt-and-copyspace.jpg?s=612x612&w=0&k=20&c=8NGM1rcNg0b5-h9zda5DuhhbZgCCBg4IQ4h0_oDJ1q8="
   },
   {
     "name": "Strawberries",
@@ -127,7 +127,7 @@
     "ifDiscount": true,
     "origin": "Spain",
     "description": "Sweet and juicy strawberries.",
-    "images": "strawberries.jpg"
+    "images": "https://www.peterhatter.com/product_photography_example_strawberry_punnet.jpg"
   },
   {
     "name": "Carrots",
@@ -137,7 +137,7 @@
     "ifDiscount": false,
     "origin": "Local",
     "description": "Fresh and crunchy carrots.",
-    "images": "carrots.jpg"
+    "images": "https://www.allrecipes.com/thmb/qEzdHHDxJirY-7-qgfEHgZOj0oA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Should-I-Peel-Carrots-3x2-1-ff34b1ac54b6468a8e35e6375b2f01ea.png"
   },
   {
     "name": "Avocado",
@@ -147,7 +147,7 @@
     "ifDiscount": false,
     "origin": "Mexico",
     "description": "Creamy and nutritious avocado.",
-    "images": "avocado.jpg"
+    "images": "https://media.istockphoto.com/id/1303865508/photo/avocado-oil-on-rustic-wooden-table.jpg?s=612x612&w=0&k=20&c=hUiSEUFOfDHXkGfqWhT_ipw8gXcyTcE43S-IOI2ujrM="
   },
   {
     "name": "Whole Wheat Bread",
@@ -157,9 +157,10 @@
     "ifDiscount": true,
     "origin": "Local",
     "description": "Healthy whole wheat bread.",
-    "images": "bread.jpg"
+    "images": "https://media.istockphoto.com/id/474679296/photo/organic-homemade-whole-wheat-bread.jpg?s=170667a&w=is&k=20&c=AaRMYnm3SUq8USZZGNj9YFMAB5qM3ksRVLV2NxVPNss="
   },
   {
+    "id": 17,
     "name": "Chocolate Chip Cookies",
     "price": 3.99,
     "category": "Bakery",
@@ -167,9 +168,10 @@
     "ifDiscount": false,
     "origin": "Local",
     "description": "Delicious homemade chocolate chip cookies.",
-    "images": "cookies.jpg"
+    "images": "https://media.istockphoto.com/id/146075834/photo/freshly-baked-chocolate-chip-cookies.jpg?s=612x612&w=0&k=20&c=2FxG9G5hL_JI-P7fIHecwz_kYmtDzgpqTqD3UWL8_XI="
   },
   {
+    "id": 18,
     "name": "Croissant",
     "price": 1.75,
     "category": "Bakery",
@@ -177,9 +179,10 @@
     "ifDiscount": true,
     "origin": "France",
     "description": "Flaky and buttery croissant.",
-    "images": "croissant.jpg"
+    "images": "https://www.allrecipes.com/thmb/AInGTxgwhNC-2DpEsqtgPUq53_U=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6916_Croissants_ddmfs_2x1_3881-2c7212e9c4514426b8c464bd36d1bb62.jpg"
   },
   {
+    "id": 19,
     "name": "Blueberry Muffins",
     "price": 2.49,
     "category": "Bakery",
@@ -187,9 +190,10 @@
     "ifDiscount": false,
     "origin": "Local",
     "description": "Freshly baked blueberry muffins.",
-    "images": "blueberry-muffins.jpg"
+    "images": "https://sallysbakingaddiction.com/wp-content/uploads/2014/05/blueberry-muffins-3.jpg"
   },
   {
+    "id": 20,
     "name": "Baguette",
     "price": 1.99,
     "category": "Bakery",
@@ -197,9 +201,10 @@
     "ifDiscount": true,
     "origin": "France",
     "description": "Classic French baguette.",
-    "images": "baguette.jpg"
+    "images": "https://assets-eu-01.kc-usercontent.com/559bb7d3-88a4-01c1-79a3-dd4d5b2d2bb0/b952b71e-20ff-4434-9486-5aa0b4378145/1-French-Baguettes.jpg"
   },
   {
+    "id": 21,
     "name": "Orange Juice",
     "price": 1.99,
     "category": "Beverage and Alcohol",
@@ -207,9 +212,10 @@
     "ifDiscount": true,
     "origin": "Local",
     "description": "Freshly squeezed orange juice.",
-    "images": "orange-juice.jpg"
+    "images": "https://hips.hearstapps.com/hmg-prod/images/glass-of-orange-juice-with-oranges-1589917191.jpg"
   },
   {
+    "id": 22,
     "name": "Red Wine",
     "price": 9.99,
     "category": "Beverage and Alcohol",
@@ -217,9 +223,10 @@
     "ifDiscount": false,
     "origin": "France",
     "description": "Rich and flavorful red wine.",
-    "images": "red-wine.jpg"
+    "images": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk1uCXUadgaZuY1ZhNHSVYRe_khdpgxFonFg&usqp=CAU"
   },
   {
+    "id": 23,
     "name": "Sparkling Water",
     "price": 0.75,
     "category": "Beverage and Alcohol",
@@ -227,9 +234,10 @@
     "ifDiscount": true,
     "origin": "Local",
     "description": "Refreshing sparkling water.",
-    "images": "sparkling-water.jpg"
+    "images": "https://media.istockphoto.com/id/1186624437/photo/carbonated-water-on-wood-grain-background.jpg?s=612x612&w=0&k=20&c=cEooGj3AwtTa8XGXpDXFgqw3AwiG8N8rsTlmtl4wUpg="
   },
   {
+    "id": 24,
     "name": "Iced Tea",
     "price": 1.49,
     "category": "Beverage and Alcohol",
@@ -237,9 +245,10 @@
     "ifDiscount": false,
     "origin": "Local",
     "description": "Sweetened and brewed iced tea.",
-    "images": "iced-tea.jpg"
+    "images": "https://www.errenskitchen.com/wp-content/uploads/2014/08/lemon-Iced-Tea.jpg"
   },
   {
+    "id": 25,
     "name": "Craft Beer",
     "price": 3.25,
     "category": "Beverage and Alcohol",
@@ -247,6 +256,6 @@
     "ifDiscount": true,
     "origin": "Local",
     "description": "Locally brewed craft beer.",
-    "images": "craft-beer.jpg"
+    "images": "https://www.utsc.utoronto.ca/food/sites/utsc.utoronto.ca.food/files/styles/16_9_hero_image_1x_small/public/images/page/Bev%20Services.png?itok=HK7kF5RY"
   }
 ]
