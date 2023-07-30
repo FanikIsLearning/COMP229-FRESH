@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 import { StorageService } from 'src/app/_services/storage.service';
 
@@ -19,7 +19,7 @@ import { FilterService } from 'src/app/services/filter.service';
 
   styleUrls: ['./products-list.component.css'],
 })
-export class ProductsListComponent implements OnInit {
+export class ProductsListComponent implements OnInit, AfterViewInit {
   productList?: Product[];
   products?: Product[];
 
@@ -76,6 +76,14 @@ export class ProductsListComponent implements OnInit {
 
       //this.username = user.username;
     }
+  }
+
+  ngAfterViewInit(): void {
+    this.searchSubscription = this.searchService.searchObservable.subscribe(
+      (name) => {
+        this.searchName(name);
+      }
+    );
   }
 
   ngOnDestroy(): void {

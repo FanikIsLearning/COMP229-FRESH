@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { SearchService } from '../../services/search.service';
 
 @Component({
@@ -9,11 +10,12 @@ import { SearchService } from '../../services/search.service';
 export class SearchToolComponent implements OnInit {
   name = '';
 
-  constructor(private searchService: SearchService) {}
+  constructor(private searchService: SearchService, private router: Router) {}
 
   ngOnInit(): void {}
 
   searchName(): void {
     this.searchService.setSearchTerm(this.name);
+    this.router.navigate(['/products'], { queryParams: { search: this.name } });
   }
 }
