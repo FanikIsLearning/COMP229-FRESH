@@ -14,9 +14,26 @@ export class ProductDetailsComponent implements OnInit {
     name: '',
     description: '',
     price: 0,
-    published: false,
+    weight: 0,
     category: '',
+    images: '',
+    ifDiscount: false,
+    origin: '',
+    published: false,
   };
+
+  productQuantity = 0;
+
+  onAddQuantity() {
+    this.productQuantity += 1;
+  }
+
+  onRemoveQuantity() {
+    if (this.productQuantity > 0) {
+      this.productQuantity -= 1;
+    }
+  }
+
   message = '';
   private roles: string[] = [];
   isLoggedIn = false;

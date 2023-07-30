@@ -1,36 +1,48 @@
 <div *ngIf="viewMode; else editable">
   <div *ngIf="currentProduct.id">
-    <h4>Product details</h4>
-    <div>
-      <img
-        [src]="currentProduct.images"
-        [alt]="currentProduct.name"
-        style="width: 300px; height: 300px"
-      />
-    </div>
-    <div>
-      <label><strong>name:</strong></label> {{ currentProduct.name }}
-    </div>
+    <div class="product-details">
+      <div class="product-title">
+        {{ currentProduct.name }}
+      </div>
 
-    <div>
-      <label><strong>Description:</strong></label>
+      <div>
+        <img
+          [src]="currentProduct.images"
+          [alt]="currentProduct.name"
+          style="width: 300px; height: 300px"
+        />
+      </div>
 
-      {{ currentProduct.description }}
-    </div>
-    <div>
-      <label><strong>Price: </strong>CAD </label>
+      <div class="product-description">
+        <label><strong>Description: </strong></label>
+        <span>{{ currentProduct.description }}</span>
+      </div>
 
-      {{ currentProduct.price }}
-    </div>
-    <div>
-      <label><strong>Weight: </strong></label>
+      <div class="product-price">
+        <label><strong>Price: </strong></label>
+        <span>{{ currentProduct.price | currency }}</span>
+      </div>
 
-      {{ currentProduct.weight }} grams
-    </div>
-    <div>
-      <label><strong>Origin: </strong></label>
+      <div class="product-weight">
+        <label><strong>Weight: </strong></label>
+        <span>{{ currentProduct.weight }}g</span>
+      </div>
 
-      {{ currentProduct.origin }}
+      <div class="product-origin">
+        <label><strong>Origin: </strong></label>
+        <span>{{ currentProduct.origin }}</span>
+      </div>
+      <div>
+        <label><strong>Price: </strong>CAD </label>
+
+        <div class="quantity">
+          <button (click)="onAddQuantity()">+</button>
+          <p>Quantity: {{ productQuantity }}</p>
+          <button (click)="onRemoveQuantity()">-</button>
+        </div>
+
+        {{ currentProduct.published ? "Published" : "Pending" }}
+      </div>
     </div>
     <a
       class="badge badge-warning"
