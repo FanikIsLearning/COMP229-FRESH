@@ -1,6 +1,22 @@
 # COMP229-FRESH
 
-#App Structure
+### Frontend
+
+https://main--grocery-fresh.netlify.app
+
+### Frontend repository
+
+https://github.com/FanikIsLearning/COMP229-Frontend
+
+### Backend
+
+https://fresh-server.onrender.com
+
+### Backend repository
+
+https://github.com/FanikIsLearning/COMP229-Backend
+
+## App Structure
 
 ```console
 FRESH
@@ -27,7 +43,8 @@ FRESH
 
 ```
 
-Git Tutorial
+# Git Tutorial
+
 Creating a new branch for your work:
 
 1. Create a new branch with your preferred name:
@@ -52,7 +69,8 @@ git push --set-upstream origin <branch_name>
 
 ---
 
-Alert! Do not do this alone!
+# Alert! Do not do this alone!
+
 After your code has been verified by one or two team members, you can merge your branch into the main branch. Here's an example using the 'README' branch:
 
 1. Switch to the 'main' branch:
