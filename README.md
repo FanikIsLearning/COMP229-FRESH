@@ -1,5 +1,29 @@
 # COMP229-FRESH
 
+Frontend
+
+```console
+https://main--grocery-fresh.netlify.app
+```
+
+Frontend repository
+
+```console
+https://github.com/FanikIsLearning/COMP229-Frontend
+```
+
+Backend
+
+```console
+https://fresh-server.onrender.com
+```
+
+Backend repository
+
+```console
+https://github.com/FanikIsLearning/COMP229-Backend
+```
+
 #App Structure
 
 ```console
